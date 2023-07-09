@@ -1,5 +1,0 @@
-var nome = prompt("qual seu nome")
-document.write(`olá ${nome}<br>`)
-document.write(`seu nome tem ${ nome.length } letras <br>`)
-document.write(`seu nome em maiusculas fica: ${nome.toUpperCase()}`<br>)
-document.write(`seu nome em minúsculas fica: ${nome.toLowerCase()}`)

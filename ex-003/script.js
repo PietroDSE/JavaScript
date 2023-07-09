@@ -1,5 +1,6 @@
-var nome = prompt("qual seu nome")
-document.writeln(`olá ${nome}<br>`)
-document.writeln(`seu nome tem ${ nome.length } letras <br>`)
-document.writeln(`seu nome em maiusculas fica: ${nome.toUpperCase()} <br>`)
-document.writeln(`seu nome em minúsculas fica: ${nome.toLowerCase()}`)
+
+
+var n1 =Number(prompt('qual o preço do produto?'))
+
+document.writeln(`o produto custa ${n1.toFixed(2).replace('.', ','.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))}`)
+
