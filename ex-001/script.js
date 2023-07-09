@@ -1,16 +1,20 @@
-window.alert("Minha primeira mensagem")
-window.confirm("Você gosta de JavaScript?")
+//window.alert("Minha primeira mensagem")
+//window.confirm("Você gosta de JavaScript?")
+var nome = window.prompt("qual seu nome?")
 
-var JavaScript = window.prompt("qual seu nome?")
+alert("é um prazer te conhecer "+nome+"!")
+//nesse caso, o sinal de + serve para concatenação 
 
-var n1 = 1
-var n2 = 1.1
-var n3 = -3
+
+
+var n1 =5
+var n2 =8.5
+var n3 =15
 //variáveis com números
 //variáveis com palavras
 var s1 ='JavaScript'
-var s2 ='DAvila'
-var s3 ='Guanabara'
+var s2 =`DAvila`
+var s3 ="Guanabara"
 
 
 
@@ -43,4 +47,3 @@ tipos primitivos:
  true, false
  boolean
 */
-  
