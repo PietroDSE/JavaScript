@@ -1,14 +1,11 @@
 window.alert("Minha primeira mensagem")
 window.confirm("Você gosta de JavaScript?")
-window.prompt("qual seu nome")
 
+var JavaScript = window.prompt("qual seu nome?")
 
-
-
-
-var n1 =5
-var n2 =8.5
-var n3 =15
+var n1 = 1
+var n2 = 1.1
+var n3 = -3
 //variáveis com números
 //variáveis com palavras
 var s1 ='JavaScript'
