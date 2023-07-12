@@ -1,0 +1,8 @@
+var preco =Number(prompt('digite um preço'))
+var preco1 =Number(prompt('outro'))
+console.log(preco >= preco1)
+console.log(preco == preco1)
+console.log(preco <= preco1)
+console.log(preco != preco1)
+console.log(preco > preco1)
+console.log(preco < preco1)
