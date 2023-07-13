@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="1.0">
     <title></title>
     <link rel="stylesheet" href="style.css">
-    <script src="Dom.js"></script>
+    <script src="script.js"></script>
     <html>
     <body>
         <h1>iniciando estudos em DOM</h1>
         <p>aqui está o resultado</p>
-        <div>clique em mim</div>
+        <div id="msg">clique em mim</div>
         <p>aprendendo a usar <strong>dom</strong>  em JS</p>
 
+        <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[0]
+        var d = window.document.getElementsByName('msg')[0]
+        d.innerText = 'olá'
+       
+       
+        </script>
     </body>
     </head>
