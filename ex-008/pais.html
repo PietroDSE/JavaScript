@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banco de dados internacional</title>
+</head>
+<body>
+        <h1>sistema de contagem populacional</h1>
+        <h2>onde você nasceu</h2>
+        <select name="tex" id="itex">
+            <option value="br" selected>brasil</option>
+            <option value="eua">estados unidos</option>
+            <option value="esp">espanha</option>
+            <option value="pt">portugal</option>
+            <option value="arg">argentina</option>
+            <option value="chi">chile</option>
+            <option value="can">canada</option>
+            <option value="rus">russia</option>
+            <option value="ucr">ucrania</option>
+            <option value="ita">italia</option>
+            <option value="out">outro</option>
+        </select>
+        
+        <input type="button" value="resultado"onclick="calcular()">
+    <div id="r">você é</div>
+    <script>
+        function calcular(){
+            var text = document.getElementById('itex')
+            var r = document.querySelector('r')
+            var pais = Number(text.value)
+            if (r == 'brasil'){
+            r.innerHTML += 'você não é brasileiro'
+            }
+            else{
+                r.innerHTML += 'você é brasileiro'
+            }
+
+        }
+    </script>
+</body>
+</html>
