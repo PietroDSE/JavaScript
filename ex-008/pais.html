@@ -3,39 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>banco de dados internacional</title>
+    <title>Document</title>
 </head>
-<body>
-        <h1>sistema de contagem populacional</h1>
-        <h2>onde você nasceu</h2>
-        <select name="tex" id="itex">
-            <option value="br" selected>brasil</option>
-            <option value="eua">estados unidos</option>
-            <option value="esp">espanha</option>
-            <option value="pt">portugal</option>
-            <option value="arg">argentina</option>
-            <option value="chi">chile</option>
-            <option value="can">canada</option>
-            <option value="rus">russia</option>
-            <option value="ucr">ucrania</option>
-            <option value="ita">italia</option>
-            <option value="out">outro</option>
-        </select>
-        
-        <input type="button" value="resultado"onclick="calcular()">
-    <div id="r">você é</div>
+<body>    <h1>contagem populacional</h1>
+    sua nacionalidade
+    <input type="text" name="txt" id="itxt">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res"></div>
     <script>
+        document.body.style.backgroundColor ='black'
+        document.body.style.color ='lightgray'
         function calcular(){
-            var text = document.getElementById('itex')
-            var r = document.querySelector('r')
-            var pais = Number(text.value)
-            if (r == 'brasil'){
-            r.innerHTML += 'você não é brasileiro'
+             var itxt = window.document.getElementById('itxt')
+            var res = window.document.getElementById('res')
+            var pais = itxt.value
+            res.innerHTML += `<p>seu pais de origem é <strong>${pais}</strong></p>`
+            if (res == 'brasil' || 'BRASIL' || 'Brasil') {
+            res.innerHTML += 'você é brasileiro'
             }
             else{
-                r.innerHTML += 'você é brasileiro'
+                res.innerHTML == 'você é estrangeiro'
             }
-
         }
     </script>
 </body>
