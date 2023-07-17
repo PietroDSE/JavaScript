@@ -1,0 +1,32 @@
+@charset "UTF-8";
+:root{
+    --branco: aliceblue;
+}
+body{
+    background-color:dodgerblue;
+    font: normal 10pt arial;
+}
+header{
+    text-align: center;
+    color: var(--branco);
+}
+section{
+    padding: 20px;
+    margin: auto;
+    background-color:var(--branco);
+    width: 550px;
+    height: 190px;
+    border-radius: 15px;
+    
+}
+.espaço{
+    margin-top: 20px;
+}
+img#morto{
+    width: 0;
+    height: 0;
+}
+footer{
+    text-align: center;
+    color:var(--branco);
+}
