@@ -38,24 +38,38 @@ function adicionar() {
 }
 
 
-function finalizar() {
-    let maior = Number(valores[0])
-    let menor = Number(valores[0])
+function finalizar() {   
+    if (valores.length == 0){
+        alert('digite um valor antes de finalizar')
+    }else{
+        let tot = valores.length
+        let maior = valores[0]
+        let menor = valores[0]
+        let soma = 0
+        let média = 0
     for(let pos in valores){
-        if (valores[pos] > maior){
+        soma += valores[pos]
+        if (valores[pos] > maior)
             maior = valores[pos]
-        } if (valores[pos] < menor){
+            
+        if (valores[pos] < menor)
             menor = valores[pos]
+            
         }
-    }
-    r.innerHTML = ''
-    if (tab.length == 1) {
-    r.innerHTML = 'ao todo temos 1 número'
-    } else{
-    r.innerHTML =`ao todo temos ${tab.length} números cadastrados <br>`
-    r.innerHTML =`o maior valor é ${maior} <br>`
-    r.innerHTML =+ `o menor valor é ${menor} <br>`
+        média = soma / tot
+        r.innerHTML = ''
+        r.innerHTML +=`ao todo temos ${tot} números cadastrados<br>`
+        r.innerHTML +=`o maior valor é ${maior}<br>`
+        r.innerHTML += `o menor valor é ${menor}<br>`
+        r.innerHTML += `a soma dos valores é igual á ${soma} <br>`
+        r.innerHTML += `a média é de ${média}<br>`
 
     }
-    
 }
+    
+
+
+ 
+    
+    
+
