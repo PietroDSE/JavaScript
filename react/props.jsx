@@ -8,3 +8,6 @@ function Greeting(props) {
 
 export default Greeting;
 
+/*As props (propriedades) são utilizadas para passar dados de um componente pai para um componente filho. Isso permite que os componentes sejam mais flexíveis e reutilizáveis.
+
+Por exemplo, vamos criar um componente Saudacao que receberá uma prop nome e exibirá uma saudação personalizada.*/

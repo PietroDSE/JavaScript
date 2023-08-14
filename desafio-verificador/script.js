@@ -4,9 +4,9 @@ let num = document.querySelector('input#num')
 let r = document.querySelector('div#res')
 let valores = [];
 
-function inlista(n, l) {
+function inlista(l) {
     //função para detectar se um número está na lista ou não
-    if (l.indexOf(Number(n)) !== -1) {
+    if (l.indexOf !== -1) {
         return true;
     } else {
         return false;
