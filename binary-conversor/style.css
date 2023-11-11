@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap');
+body{
+    color: white;
+    overflow: hidden;
+    font-family: 'Mooli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #333;
+}
+div{
+    border: 10px solid black;
+    padding-left: 50px;
+    width: 100%;
+    margin-top: 0;
+    margin: 50px;
+}
+div#bin{
+    height: 550px;
+    position: absolute;
+    top: 42%;
+}
+div#dec{
+    height: 300px;
+    position: absolute;
+    bottom: 40%;
+}
+input{
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    height: 25px;
+}
+button{
+    cursor: pointer;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    width: 65px;
+    background-color: #ddd;
+}
+button:hover{
+    transition-duration: 1.2s;
+    background-color: black;
+    columns: white;
+    color: white;
+}
+span#binary_result{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 50px;
+    display: flex;
+    width: 96vw;
+    justify-content: center;
+}
